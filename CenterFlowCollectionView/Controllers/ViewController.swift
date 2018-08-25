@@ -16,7 +16,6 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         let initialFolderUrl = URL(fileURLWithPath: "/Library/Desktop Pictures", isDirectory: true)
         imageDirectoryLoader.loadDataForFolderWithUrl(initialFolderUrl)
-        
     }
     
     func loadDataForNewFolderWithUrl(_ folderURL: URL) {
@@ -52,7 +51,7 @@ extension ViewController : NSCollectionViewDataSource {
 }
 extension ViewController : NSCollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 100)
+        return CGSize(width: 200, height: 200)
     }
     
     func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

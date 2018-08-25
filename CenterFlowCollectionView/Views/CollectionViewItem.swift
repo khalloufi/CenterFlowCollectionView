@@ -7,17 +7,35 @@
 //
 
 import Cocoa
-
+extension CGFloat {
+    static var random: CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+extension NSColor {
+    static var random: NSColor {
+        return NSColor(red: .random,
+                       green: .random,
+                       blue: .random,
+                       alpha: 1.0)
+    }
+}
 class CollectionViewItem: NSCollectionViewItem {
 
     @IBOutlet weak var subject: NSButton!
+    @IBOutlet weak var circle: CircleView!
     // 1
     var imageFile: ImageFile? {
         didSet {
             guard isViewLoaded else { return }
             if let imageFile = imageFile {
-                subject?.image = imageFile.thumbnail
                 subject?.title = imageFile.fileName
+                subject?.image = imageFile.thumbnail
+                circle?.bgColor = NSColor.random
+                let shadow = NSShadow()
+                shadow.shadowBlurRadius = 7
+                shadow.shadowColor = circle?.bgColor.withAlphaComponent(0.8)
+                circle?.shadow = shadow
             }
         }
     }
@@ -25,10 +43,6 @@ class CollectionViewItem: NSCollectionViewItem {
     // 2
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.wantsLayer = true
-        self.view.layerContentsRedrawPolicy = NSView.LayerContentsRedrawPolicy.onSetNeedsDisplay
-        self.view.layer?.cornerRadius = 0.24 *  self.view.bounds.size.width
-        self.view.layer?.borderWidth = 1.0
     }
     
 }

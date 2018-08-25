@@ -16,6 +16,8 @@
 		C245C4052131780B008D65F6 /* CollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = C245C4032131780B008D65F6 /* CollectionViewItem.xib */; };
 		C245C408213178B8008D65F6 /* ImageDirectoryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C245C406213178B8008D65F6 /* ImageDirectoryLoader.swift */; };
 		C245C409213178B8008D65F6 /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C245C407213178B8008D65F6 /* ImageFile.swift */; };
+		C2A9A4EF2132165300874503 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A9A4EE2132165300874503 /* CircleView.swift */; };
+		C2A9A4F12132242A00874503 /* CenterCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A9A4F02132242A00874503 /* CenterCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		C245C4032131780B008D65F6 /* CollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewItem.xib; sourceTree = "<group>"; };
 		C245C406213178B8008D65F6 /* ImageDirectoryLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDirectoryLoader.swift; sourceTree = "<group>"; };
 		C245C407213178B8008D65F6 /* ImageFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
+		C2A9A4EE2132165300874503 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		C2A9A4F02132242A00874503 /* CenterCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				C245C4022131780B008D65F6 /* CollectionViewItem.swift */,
+				C2A9A4EE2132165300874503 /* CircleView.swift */,
+				C2A9A4F02132242A00874503 /* CenterCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +192,8 @@
 				C245C3EB21315926008D65F6 /* AppDelegate.swift in Sources */,
 				C245C409213178B8008D65F6 /* ImageFile.swift in Sources */,
 				C245C408213178B8008D65F6 /* ImageDirectoryLoader.swift in Sources */,
+				C2A9A4F12132242A00874503 /* CenterCollectionView.swift in Sources */,
+				C2A9A4EF2132165300874503 /* CircleView.swift in Sources */,
 				C245C40121317498008D65F6 /* CenterFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
