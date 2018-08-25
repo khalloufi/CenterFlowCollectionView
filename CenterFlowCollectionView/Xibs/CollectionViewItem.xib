@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="CenterFlowCollectionView" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aPL-Wv-N2c">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Brt-y0-RF2"/>
+                        <constraint firstAttribute="width" constant="200" id="Exn-G2-Mk5"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Button" bezelStyle="rounded" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="glZ-Hv-bYo">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="aPL-Wv-N2c" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="2Ra-po-hHt"/>
+                <constraint firstAttribute="bottom" secondItem="aPL-Wv-N2c" secondAttribute="bottom" id="nyG-7q-WtW"/>
+                <constraint firstItem="aPL-Wv-N2c" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="s1v-ZF-ith"/>
+                <constraint firstAttribute="trailing" secondItem="aPL-Wv-N2c" secondAttribute="trailing" id="w4c-z9-lSi"/>
+            </constraints>
+        </customView>
+        <collectionViewItem id="5OV-wY-fX1" customClass="CollectionViewItem" customModule="CenterFlowCollectionView" customModuleProvider="target">
+            <connections>
+                <outlet property="subject" destination="aPL-Wv-N2c" id="3jw-dv-aVk"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="jJA-Cc-2hS"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+</document>
